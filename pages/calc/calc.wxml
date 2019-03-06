@@ -1,0 +1,18 @@
+<!--pages/calc/calc.wxml-->
+
+
+<view class="btn-area">
+    <view class="body-view">输出：</view>
+    <view class="body-view">外高：{{OutsideHighValue}}</view>
+    <view class="body-view">外宽：{{OutsidewidthValue}}</view>
+    <view class="body-view">内扇高：{{insideHigtValue}}</view>
+    <view class="body-view">内扇宽：{{insidewidthValue}}</view>
+    <view class="body-view">固网：{{Fixedhigh}} *{{Fixedwidth}} * 2</view>
+    <view class="body-view">活网：{{UnFixedhigh}} *{{UnFixedwidth}} * 1</view>
+    <view class="body-view">************************</view>
+    <view class="body-view">输入：</view>
+    <view class="body-view">高：{{inputhighValue}}<input  type="number" bindinput="bindKeyInputHigh" placeholder="输入同步到view中"/></view>
+    <view class="body-view">宽：{{inputwidthValue}}<input  type="number" bindinput="bindKeyInputWidth" placeholder="输入同步到view中"/></view>
+    <view class="body-view"><button bindtap="calc_result">计算</button></view>
+</view>
+<!--计算小程序 by wenjun-->
